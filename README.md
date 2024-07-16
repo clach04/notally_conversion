@@ -1,6 +1,6 @@
 # notally_conversion
 
-Conversion tools for Notally https://github.com/OmGodse/Notally notes
+Conversion tools for [Notally](https://github.com/OmGodse/Notally) notes
 
 ## Tools
 
@@ -96,3 +96,7 @@ Indented DDL for notes table, BaseNote:
         `audios` TEXT NOT NULL
     );
 
+## Similar/related tools
+
+  * https://github.com/clach04/quillpad_conversion for Quillpad (nee Quillnote), also includes a Notally to Quillpad conversion tool
+  * https://github.com/clach04/pysimplenote - for SimpleNote conversion tools
