@@ -1,0 +1,5 @@
+And / ampersand &
+Greater than less then <tag>
+Copyright symbol, non-ASCII ©️
+Curency Euro symbol €
+Curency GBP symbol £

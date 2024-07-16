@@ -1,0 +1,15 @@
+`1234567890-=
+    qwertyuiop[]\
+asdfghjkl;'
+zxcvbnm,./
+
+~!@#$%^&*()_+++++++++
+QWERTY^UIOP{}|
+ASDFGHJKL:"
+ZXCVBNM<>?
+
+/*-
+789+
+456
+123
+0.
