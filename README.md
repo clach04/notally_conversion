@@ -13,6 +13,9 @@ Does the absolute minimum, for example skips create date meta data.
 
 ## XML Export/Import format
 
+Raw and uncompressed XML file.
+Notally version 4.8 exported indented/pretty format XML with spaces.
+
 ### Notally 4.8 and earlier
 
 Sample, single note:
@@ -35,6 +38,8 @@ If pinned missing, assumes False.
 
 
 ## SQLite3 database
+
+Compressed zip file with SQLite3 database, and later versions also with directories of attachments (pictures and audio).
 
 ### Notally 5.4 (and earlier, 4.9 https://github.com/OmGodse/Notally/releases/tag/v4.9) schema 2023-08-12
 
