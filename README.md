@@ -82,18 +82,18 @@ Indented DDL for notes table, BaseNote:
 
     CREATE TABLE `BaseNote` (
         `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-        `type` TEXT NOT NULL,  // One of; 
-        `folder` TEXT NOT NULL,  // One of; 
+        `type` TEXT NOT NULL,  // One of; LIST, NOTE
+        `folder` TEXT NOT NULL,  // One of; NOTES, DELETED, ARCHIVED
         `color` TEXT NOT NULL,  // One of https://github.com/OmGodse/Notally/blob/6c1591e0fee0b0a5717f8fb3b4bdfdd586904e82/app/src/main/java/com/omgodse/notally/room/Color.kt#L3  -- also see Themes, e.g. /app/src/main/res/values/colors.xml
         `title` TEXT NOT NULL,  // May be empty string
         `pinned` INTEGER NOT NULL,  // One of; 0/1 - versus true/false in XML
         `timestamp` INTEGER NOT NULL,  // number of seconds since 1970-01-01 00:00:00 gmt0
-        `labels` TEXT NOT NULL,
-        `body` TEXT NOT NULL,
-        `spans` TEXT NOT NULL,
-        `items` TEXT NOT NULL,
-        `images` TEXT NOT NULL,
-        `audios` TEXT NOT NULL
+        `labels` TEXT NOT NULL,  // json list of strings
+        `body` TEXT NOT NULL,  // For NOTE type, string of note body content. For LIST type empty string.
+        `spans` TEXT NOT NULL,  // json list of ranges of character styles. TODO offset starts at zero or one? Example extract; [{"bold":true,"link":false,"italic":false,"monospace":false,"strikethrough":false,"start":7,"end":11}....]
+        `items` TEXT NOT NULL,  // For NOTE type empty string, for LIST type json payload, list of dict. Example: [{"body":"Item 1","checked":false}, ...]
+        `images` TEXT NOT NULL,  // json list of dicts. UUID/filename and mimetype Example; [{"name":"d9f53103-1b01-4936-b62a-5ef87d54791b.webp","mimeType":"image\/webp"}]
+        `audios` TEXT NOT NULL  // json list of dicts. TODO duration is millisecs? Example; [{"name":"fdda1ca6-0b0b-4a1e-a2e6-1203497f465e.m4a","duration":2560,"timestamp":1721001688940}]
     );
 
 ## Similar/related tools
