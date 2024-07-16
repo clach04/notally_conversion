@@ -10,6 +10,7 @@ txt2notally_xml.py
 
 Takes in list of (plain) text files to import, generates old style XML file still supported by current releases (e.g. 5.9).
 Does the absolute minimum, for example skips create date meta data.
+If no files are passed in, looks in current directory for `*.txt` and `*.md`
 
 ## XML Export/Import format
 
